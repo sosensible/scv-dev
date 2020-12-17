@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  api:
+    image: dapi:poc
+    build:
+      context: ./api
+      dockerfile: ./api/Dockerfile
+  ui:
+    image: dui:poc
+    build:
+      context: ./ui
+      dockerfile: ./ui/Dockerfile
